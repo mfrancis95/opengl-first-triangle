@@ -14,7 +14,7 @@ void draw(GLsizei count) {
 }
 
 void init(char* title) {
-    window = SDL_CreateWindow("OpenGL - First Triangle", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 640, 480, SDL_WINDOW_OPENGL);
+    window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 640, 480, SDL_WINDOW_OPENGL);
     context = SDL_GL_CreateContext(window);
     glClearColor(0, 0, 0, 1);
     glClear(GL_COLOR_BUFFER_BIT);
