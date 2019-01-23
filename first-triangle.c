@@ -8,13 +8,13 @@ static void setupBuffers(void) {
         -1, -1, 0,
         1, -1, 0
     };
-    setupBuffer(0, positionData, sizeof(positionData));
+    setupBuffer(positionData, sizeof(positionData));
     GLfloat colourData[9] = {
         1, 0, 0,
         0, 1, 0,
         0, 0, 1
     };
-    setupBuffer(1, colourData, sizeof(colourData));
+    setupBuffer(colourData, sizeof(colourData));
 }
 
 static void setupUniforms(int vertexMode, int fragmentMode) {
